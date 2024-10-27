@@ -1,0 +1,354 @@
+/* Style pour la section Hero */
+.hero-section {
+    background-color: #4B0082; 
+    /* background-color:#FFA500; */
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: bold; 
+    color: #FFA500; /* Orange pour le sous-titre */
+}
+
+/* Style de la section Hero */
+.hero-content {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#cv{
+    background-color: #e69500;
+    color: white;
+    font-weight: bold;
+}
+.hero-content h2 {
+    font-size: 1.5rem;
+    color: #FFA500; /* Orange pour le texte animé */
+}
+
+/* Animation de saisie */
+.typing-text {
+    border-right: 2px solid #FFFFFF; /* Curseur de saisie */
+    white-space: nowrap;
+    font-weight: bold;
+    overflow: hidden;
+    display: inline-block;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+
+.hero-section .btn-warning {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    }
+
+.hero-section img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+  .nav-link {
+    color: orange; /* Bleu */
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  /* Effet de soulignement animé au survol */
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  /* Effet de lien actif */
+  .nav-link.active {
+    color: #ff8800; /* Couleur d'accentuation */
+  }
+
+  .nav-link.active::after {
+    width: 100%;
+  }
+
+  /* Animation de changement de couleur au survol */
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #0056b3; /* Couleur plus foncée au survol */
+    font-weight: bold;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+
+
+
+#im4{
+    position: relative;
+    margin-top: 20px;
+}
+
+#im4:hover{
+    transition: 3s;
+   transform: scale(3S);
+    background-color: #ffffff   ;
+}
+
+/* Style pour la section À propos */
+.apropos-section {
+    background-color: #FFFFFF; /* Fond blanc */
+    padding: 50px 0;
+}
+
+.apropos-section h2 {
+    /* font-size: 2.5rem; */
+    font-weight: 40px;
+    font-weight: bold;
+    color: orange; /* Violet pour le titre */
+}
+
+.apropos-section h3 {
+    font-size: 1.8rem;
+    color: #333333; /* Noir pour le sous-titre */
+    margin-bottom: 20px;
+}
+
+.apropos-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555555; 
+    margin-bottom: 20px;
+}
+
+.apropos-section .btn-warning {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: white;
+    background-color: #FFA500; /* Orange pour le bouton */
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.apropos-section .btn-warning:hover {
+    background-color: #e69500; /* Orange foncé au survol */
+}
+
+.apropos-section img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+#apropos h2{
+    margin-top: 30px;
+}
+
+
+/* Section Styles */
+.services-section {
+    background-color: #385da3; 
+    height: 100vh;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: orange; /* Violet pour le titre */
+}
+
+/* Card Styles */
+.service-card {
+    background-color:  #ffffff ;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Style */
+.service-icon {
+    font-size: 2rem;
+    color: #FFA500; /* Orange icon color */
+    margin-bottom: 15px;
+}
+
+/* Title Style */
+.service-title {
+    font-size: 1.2rem;
+    color: #FFA500; /* Orange title color */
+    margin: 0;
+}
+
+/* Description Style */
+.service-description {
+    color: rgb(0, 0, 0); /* Black text */
+    font-size: 0.9rem;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-card:hover .service-description {
+    opacity: 1; /* Show description on hover */
+}
+
+#deugeur h2{
+    position: relative;
+    margin-top: 30px;
+    
+}
+
+ /* Couleurs et style */
+ .text-orange {
+    color: #ff8800;
+  }
+
+
+
+
+  #comp{
+     color: orange;
+     font-size: 45px;
+     font-weight: bold;
+     margin-top: 40px;
+    }
+   
+  /* Style des cartes projets */
+  .project-card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background-color: #fff;
+  }
+
+  /* Image et overlay */
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Overlay de description au survol */
+  .project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Description de projet */
+  .project-description {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .project-card:hover .project-overlay {
+    opacity: 1;
+  }
+
+
+  #projets h5{
+       color: orange;
+       font-weight: bold;
+  }
+
+  #projets h2{
+    margin-top: 40px;
+    font-size: 40px;
+    color: #FFA500; 
+    font-weight: bold;
+  }
+
+  #cont{
+    color: orange;
+    font-size: 45px;
+    font-weight: bold;
+  }
+
+  label {
+    color: #385da3; 
+    font-weight: bold;
+  }
+
+  #env{
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+  }
+
+    #info h5{
+
+        color: #385da3; 
+
+    }
+  
+  footer {
+    background-color: #343a40;
+    color: orange;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+footer p {
+    margin: 0;
+}
+
